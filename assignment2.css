@@ -1,0 +1,195 @@
+/* ---------- Base ---------- */
+:root {
+  --blue: #004aad;
+  --bg: #f4f4f4;
+  --text: #222;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* ---------- Header / Navigation ---------- */
+.site-header {
+  background: var(--blue);
+  color: var(--white);
+  padding: 8px 0 6px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.site-header h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.site-header nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 0.75rem;
+  margin: 0 8px;
+}
+
+.site-header nav a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Sections ---------- */
+section {
+  padding: 20px 16px 28px;
+  border-bottom: 2px solid #ccc;
+  scroll-margin-top: 56px;
+}
+
+section:last-of-type {
+  border-bottom: none;
+}
+
+section h2 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+/* ---------- About ---------- */
+.avatar {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 16px;
+}
+
+#about p {
+  font-size: 0.75rem;
+}
+
+/* ---------- Skills table ---------- */
+.skills-table {
+  width: 100%;
+  max-width: 390px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 0.75rem;
+}
+
+.skills-table th,
+.skills-table td {
+  border: 1px solid var(--blue);
+  padding: 6px 10px;
+  width: 50%;
+}
+
+.skills-table th {
+  background: var(--blue);
+  color: var(--white);
+}
+
+/* ---------- Projects ---------- */
+.project-card {
+  background: var(--white);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 405px;
+  margin: 0 auto 8px;
+  padding: 14px 16px;
+}
+
+.project-card h3 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.project-card p {
+  font-size: 0.75rem;
+}
+
+/* ---------- Contact form ---------- */
+.form-table {
+  width: 100%;
+  max-width: 390px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 0.75rem;
+}
+
+.form-table td {
+  border: 1px solid var(--blue);
+  padding: 6px;
+}
+
+.form-table td:first-child {
+  width: 30%;
+}
+
+.form-table label {
+  display: block;
+}
+
+.form-table input,
+.form-table textarea {
+  width: 100%;
+  border: 1px solid #555;
+  padding: 3px 4px;
+  font-family: inherit;
+  font-size: 0.65rem;
+}
+
+.send-btn {
+  background: var(--blue);
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+  padding: 6px 0;
+  width: 55%;
+  font-family: inherit;
+  font-size: 0.65rem;
+  cursor: pointer;
+}
+
+.send-btn:hover {
+  opacity: 0.9;
+}
+
+/* ---------- Footer & Back to Top ---------- */
+.site-footer {
+  background: var(--blue);
+  height: 8px;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 12px;
+  bottom: 12px;
+  background: var(--blue);
+  color: var(--white);
+  text-decoration: none;
+  font-size: 0.7rem;
+  padding: 10px 18px;
+  border-radius: 4px;
+}
+
+/* ---------- Small screens ---------- */
+@media (max-width: 480px) {
+  .avatar {
+    width: 200px;
+    height: 200px;
+  }
+}
